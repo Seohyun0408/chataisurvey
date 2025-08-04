@@ -1,8 +1,7 @@
 import streamlit as st
 import openai
 
-openai.api_key = st.secrets["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"]  # OpenAI 계정에서 발급받은 키"]  # streamlit cloud용
-
+openai.api_key = st.secrets["openai_api_key"]
 st.set_page_config(page_title="시니어 챗봇 설문", page_icon="🧓", layout="centered")
 
 if "step" not in st.session_state:
